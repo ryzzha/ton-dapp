@@ -1,6 +1,9 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import { nodePolyfills } from "vite-plugin-node-polyfills";
+import dotenv from 'dotenv'
+
+dotenv.config()
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -13,5 +16,5 @@ export default defineConfig({
       buffer: 'buffer', // Використовуємо npm-пакет buffer
     },
   },
-  base: "/ton-dapp/"
+  base: process.env.VERCEL ? "/" : "/ton-dapp/",
 })
