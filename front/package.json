@@ -12,6 +12,7 @@
   "dependencies": {
     "@orbs-network/ton-access": "^2.3.3",
     "@tonconnect/ui-react": "^2.1.0",
+    "@twa-dev/sdk": "^8.0.2",
     "dotenv": "^16.4.7",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",

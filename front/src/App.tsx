@@ -5,16 +5,22 @@ import { fromNano } from 'ton-core';
 import { useTonConnect } from './hooks/useTonConnect';
 import { ChangeCounterForm } from './components/CounterChangeForm';
 import { TransferForm } from './components/TransferForm';
+import WebApp from '@twa-dev/sdk';
 
 function App() {
   const { address, balance, counter, sender, owner, sendChangeIncrement, sendDeposit, sendWithdraw } = useMainContract();
   const { connected } = useTonConnect();
+
+  const showPlatform = () => {
+    WebApp.showAlert(WebApp.platform.toString());
+  }
 
   return (
     <div className="app-container">
       <header>
         <h1>🚀 Build on TON</h1>
         <TonConnectButton className="ton-button" />
+        <button onClick={showPlatform}>show platform</button>
       </header>
 
       <main className="info-panel">
