@@ -13,4 +13,5 @@ export default defineConfig({
       buffer: 'buffer', // Використовуємо npm-пакет buffer
     },
   },
+  base: "/front/"
 })

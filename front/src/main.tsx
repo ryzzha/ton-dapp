@@ -6,7 +6,7 @@ import { TonConnectUIProvider } from '@tonconnect/ui-react'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <TonConnectUIProvider manifestUrl="https://alefmanvladimir.github.io/my-twa/tonconnect-manifest.json">
+    <TonConnectUIProvider manifestUrl="https://ryzzha/github.io/front/tonconnect-manifest.json">
       <App />
     </TonConnectUIProvider>
   </StrictMode>,
